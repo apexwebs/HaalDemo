@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { MobileFrame } from '../common/MobileFrame';
 import { RiderNavigationProps } from './RiderApp';
 import { motion } from 'motion/react';
 import { Loader2 } from 'lucide-react';
@@ -14,8 +13,7 @@ export function RiderFindingDriver({ onNavigate, onExit }: RiderNavigationProps)
   }, [onNavigate]);
 
   return (
-    <MobileFrame onExit={onExit}>
-      <div className="h-full flex flex-col items-center justify-center bg-gradient-to-br from-primary/5 to-accent/5 pt-11 px-6">
+    <div className="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-primary/5 to-accent/5 pt-11 px-6">
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
@@ -96,6 +94,5 @@ export function RiderFindingDriver({ onNavigate, onExit }: RiderNavigationProps)
           Cancel Request
         </Button>
       </div>
-    </MobileFrame>
   );
 }

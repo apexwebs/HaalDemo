@@ -1,5 +1,4 @@
 import React from 'react';
-import { MobileFrame } from '../common/MobileFrame';
 import { DriverNavigationProps } from './DriverApp';
 import { Phone, Navigation, MapPin } from 'lucide-react';
 import { Button } from '../ui/button';
@@ -8,8 +7,7 @@ import { motion } from 'motion/react';
 
 export function DriverNavigating({ onNavigate, onExit }: DriverNavigationProps) {
   return (
-    <MobileFrame onExit={onExit}>
-      <div className="h-full relative bg-background pt-11">
+    <div className="h-screen relative bg-background pt-11">
         {/* Map with navigation */}
         <div className="absolute inset-0 top-11 bg-gradient-to-br from-primary/5 to-accent/5">
           <div className="relative w-full h-full">
@@ -114,6 +112,5 @@ export function DriverNavigating({ onNavigate, onExit }: DriverNavigationProps) 
           </Card>
         </div>
       </div>
-    </MobileFrame>
   );
 }

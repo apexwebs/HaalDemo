@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { MobileFrame } from '../common/MobileFrame';
 import { RiderNavigationProps } from './RiderApp';
 import { AlertTriangle, Share2, Phone, MessageCircle } from 'lucide-react';
 import { Card } from '../ui/card';
@@ -29,8 +28,7 @@ export function RiderActiveTrip({ onNavigate, onExit }: RiderNavigationProps) {
   };
 
   return (
-    <MobileFrame onExit={onExit}>
-      <div className="h-full relative bg-background pt-11">
+    <div className="h-screen relative bg-background pt-11">
         {/* Map area with route */}
         <div className="absolute inset-0 top-11 bg-gradient-to-br from-primary/5 to-accent/5">
           <div className="relative w-full h-full">
@@ -173,6 +171,5 @@ export function RiderActiveTrip({ onNavigate, onExit }: RiderNavigationProps) {
           </Card>
         </div>
       </div>
-    </MobileFrame>
   );
 }

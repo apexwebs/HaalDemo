@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { MobileFrame } from '../common/MobileFrame';
 import { RiderNavigationProps } from './RiderApp';
 import { ArrowLeft, Users, Star, Zap } from 'lucide-react';
 import { Button } from '../ui/button';
@@ -49,8 +48,7 @@ export function RiderRideSelection({ onNavigate, onExit }: RiderNavigationProps)
   const [selectedRide, setSelectedRide] = useState('comfort');
 
   return (
-    <MobileFrame onExit={onExit}>
-      <div className="h-full flex flex-col bg-background pt-11">
+    <div className="h-screen flex flex-col bg-background pt-11">
         {/* Map preview */}
         <div className="h-2/5 relative bg-gradient-to-br from-primary/10 to-accent/10">
           <button
@@ -163,6 +161,5 @@ export function RiderRideSelection({ onNavigate, onExit }: RiderNavigationProps)
           </div>
         </div>
       </div>
-    </MobileFrame>
   );
 }

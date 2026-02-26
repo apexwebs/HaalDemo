@@ -1,13 +1,11 @@
 import React from 'react';
-import { MobileFrame } from '../common/MobileFrame';
 import { DriverNavigationProps } from './DriverApp';
 import { ArrowLeft, Car, FileText, CheckCircle, Star, LogOut, ChevronRight } from 'lucide-react';
 import { Card } from '../ui/card';
 
 export function DriverProfile({ onNavigate, onExit }: DriverNavigationProps) {
   return (
-    <MobileFrame onExit={onExit}>
-      <div className="h-full bg-background pt-11 overflow-auto">
+    <div className="h-screen bg-background pt-11 overflow-auto">
         {/* Header */}
         <div className="px-4 py-4 border-b border-border">
           <div className="flex items-center gap-3">
@@ -159,6 +157,5 @@ export function DriverProfile({ onNavigate, onExit }: DriverNavigationProps) {
           </button>
         </div>
       </div>
-    </MobileFrame>
   );
 }

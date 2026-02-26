@@ -1,7 +1,6 @@
 import React from 'react';
-import { MobileFrame } from '../common/MobileFrame';
 import { RiderNavigationProps } from './RiderApp';
-import { Search, MapPin, User, Clock, Menu } from 'lucide-react';
+import { Search, MapPin, Clock, Menu } from 'lucide-react';
 import { Card } from '../ui/card';
 
 const nearbyDrivers = [
@@ -19,8 +18,7 @@ const recentDestinations = [
 
 export function RiderHome({ onNavigate, onExit }: RiderNavigationProps) {
   return (
-    <MobileFrame onExit={onExit}>
-      <div className="h-full relative bg-background pt-11">
+    <div className="h-screen relative bg-background pt-11">
         {/* Map area */}
         <div className="absolute inset-0 top-11 bg-gradient-to-br from-primary/5 to-accent/5">
           {/* Simulated map with markers */}
@@ -124,6 +122,5 @@ export function RiderHome({ onNavigate, onExit }: RiderNavigationProps) {
           </Card>
         </div>
       </div>
-    </MobileFrame>
   );
 }

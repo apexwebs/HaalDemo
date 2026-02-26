@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { MobileFrame } from '../common/MobileFrame';
 import { RiderNavigationProps } from './RiderApp';
 import { CheckCircle, Star } from 'lucide-react';
 import { Card } from '../ui/card';
@@ -20,8 +19,7 @@ export function RiderTripCompleted({ onNavigate, onExit }: RiderNavigationProps)
   };
 
   return (
-    <MobileFrame onExit={onExit}>
-      <div className="h-full flex flex-col bg-background pt-11 overflow-auto">
+    <div className="h-screen flex flex-col bg-background pt-11 overflow-auto">
         {!submitted ? (
           <>
             {/* Header */}
@@ -186,6 +184,5 @@ export function RiderTripCompleted({ onNavigate, onExit }: RiderNavigationProps)
           </div>
         )}
       </div>
-    </MobileFrame>
   );
 }

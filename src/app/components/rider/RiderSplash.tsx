@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
-import { MobileFrame } from '../common/MobileFrame';
 import { RiderNavigationProps } from './RiderApp';
-import { Car, Waves } from 'lucide-react';
+import { Car } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export function RiderSplash({ onNavigate, onExit }: RiderNavigationProps) {
@@ -13,8 +12,7 @@ export function RiderSplash({ onNavigate, onExit }: RiderNavigationProps) {
   }, [onNavigate]);
 
   return (
-    <MobileFrame onExit={onExit} showStatusBar={false}>
-      <div className="h-full bg-gradient-to-br from-primary via-cyan-500 to-accent flex flex-col items-center justify-center relative overflow-hidden">
+    <div className="h-screen bg-gradient-to-br from-primary via-cyan-500 to-accent flex flex-col items-center justify-center relative overflow-hidden">
         {/* Animated waves */}
         <motion.div
           className="absolute inset-0 opacity-10"
@@ -90,6 +88,5 @@ export function RiderSplash({ onNavigate, onExit }: RiderNavigationProps) {
           </div>
         </motion.div>
       </div>
-    </MobileFrame>
   );
 }

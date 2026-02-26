@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { RiderApp } from './components/rider/RiderApp';
 import { DriverApp } from './components/driver/DriverApp';
 import { AdminDashboard } from './components/admin/AdminDashboard';
-import { Button } from './components/ui/button';
-import { Car, Users, LayoutDashboard } from 'lucide-react';
+import { Car, Users, LayoutDashboard, ArrowLeft } from 'lucide-react';
 
 type AppView = 'selector' | 'rider' | 'driver' | 'admin';
 
@@ -11,15 +10,45 @@ export default function App() {
   const [currentView, setCurrentView] = useState<AppView>('selector');
 
   if (currentView === 'rider') {
-    return <RiderApp onExit={() => setCurrentView('selector')} />;
+    return (
+      <div className="relative min-h-screen">
+        <button
+          onClick={() => setCurrentView('selector')}
+          className="fixed top-4 left-4 z-50 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg hover:bg-white transition-colors"
+        >
+          <ArrowLeft className="w-6 h-6 text-foreground" />
+        </button>
+        <RiderApp onExit={() => setCurrentView('selector')} />
+      </div>
+    );
   }
 
   if (currentView === 'driver') {
-    return <DriverApp onExit={() => setCurrentView('selector')} />;
+    return (
+      <div className="relative min-h-screen">
+        <button
+          onClick={() => setCurrentView('selector')}
+          className="fixed top-4 left-4 z-50 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg hover:bg-white transition-colors"
+        >
+          <ArrowLeft className="w-6 h-6 text-foreground" />
+        </button>
+        <DriverApp onExit={() => setCurrentView('selector')} />
+      </div>
+    );
   }
 
   if (currentView === 'admin') {
-    return <AdminDashboard onExit={() => setCurrentView('selector')} />;
+    return (
+      <div className="relative min-h-screen">
+        <button
+          onClick={() => setCurrentView('selector')}
+          className="fixed top-4 left-4 z-50 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg hover:bg-white transition-colors"
+        >
+          <ArrowLeft className="w-6 h-6 text-foreground" />
+        </button>
+        <AdminDashboard onExit={() => setCurrentView('selector')} />
+      </div>
+    );
   }
 
   return (
@@ -31,7 +60,6 @@ export default function App() {
           </div>
           <h1 className="text-5xl mb-3 text-foreground">HAAL CABS</h1>
           <p className="text-xl text-muted-foreground">Your Ride, Your Way / Safari Yako, Njia Yako</p>
-          <p className="text-sm text-muted-foreground mt-2">Prototype Navigation - Select an interface to explore</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">

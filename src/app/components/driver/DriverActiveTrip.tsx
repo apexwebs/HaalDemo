@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { MobileFrame } from '../common/MobileFrame';
 import { DriverNavigationProps } from './DriverApp';
 import { Phone, AlertTriangle, Navigation } from 'lucide-react';
 import { Button } from '../ui/button';
@@ -31,8 +30,7 @@ export function DriverActiveTrip({ onNavigate, onExit }: DriverNavigationProps) 
   };
 
   return (
-    <MobileFrame onExit={onExit}>
-      <div className="h-full relative bg-background pt-11">
+    <div className="h-screen relative bg-background pt-11">
         {/* Map area */}
         <div className="absolute inset-0 top-11 bg-gradient-to-br from-primary/5 to-accent/5">
           <div className="relative w-full h-full">
@@ -142,6 +140,5 @@ export function DriverActiveTrip({ onNavigate, onExit }: DriverNavigationProps) 
           </Card>
         </div>
       </div>
-    </MobileFrame>
   );
 }

@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { X, Car, LayoutDashboard, Users, UserCheck, DollarSign, TrendingUp, Bell, Settings as SettingsIcon, LogOut } from 'lucide-react';
+import { Car, LayoutDashboard, Users, UserCheck, DollarSign, TrendingUp, Bell, Settings as SettingsIcon, LogOut } from 'lucide-react';
 import { AdminScreen } from '../admin/AdminDashboard';
 
 interface DesktopFrameProps {
@@ -23,16 +23,7 @@ export function DesktopFrame({ children, onExit, currentScreen, onNavigate, show
   ];
 
   return (
-    <div className="min-h-screen bg-muted/30 flex">
-      {onExit && (
-        <button
-          onClick={onExit}
-          className="fixed top-4 right-4 z-50 bg-white hover:bg-muted text-foreground rounded-lg p-2 shadow-lg transition-colors"
-        >
-          <X className="w-5 h-5" />
-        </button>
-      )}
-
+    <div className="min-h-screen bg-background flex">
       {showSidebar && onNavigate && (
         <div className="w-64 bg-white border-r border-border flex-shrink-0">
           <div className="p-6 border-b border-border">

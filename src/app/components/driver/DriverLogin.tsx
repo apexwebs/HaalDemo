@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { MobileFrame } from '../common/MobileFrame';
 import { DriverNavigationProps } from './DriverApp';
 import { Car, Phone, ArrowRight } from 'lucide-react';
 import { Button } from '../ui/button';
@@ -27,8 +26,7 @@ export function DriverLogin({ onNavigate, onExit }: DriverNavigationProps) {
   };
 
   return (
-    <MobileFrame onExit={onExit}>
-      <div className="h-full flex flex-col bg-gradient-to-br from-accent/10 to-primary/10 pt-11">
+    <div className="h-screen flex flex-col bg-gradient-to-br from-accent/10 to-primary/10 pt-11">
         <div className="flex-1 flex flex-col justify-center px-6">
           {/* Logo */}
           <div className="text-center mb-12">
@@ -115,6 +113,5 @@ export function DriverLogin({ onNavigate, onExit }: DriverNavigationProps) {
           </p>
         </div>
       </div>
-    </MobileFrame>
   );
 }

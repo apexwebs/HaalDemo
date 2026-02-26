@@ -1,5 +1,4 @@
 import React from 'react';
-import { MobileFrame } from '../common/MobileFrame';
 import { RiderNavigationProps } from './RiderApp';
 import { ArrowLeft, MapPin, Clock, ChevronRight } from 'lucide-react';
 import { Card } from '../ui/card';
@@ -69,8 +68,7 @@ const tripHistory = [
 
 export function RiderTripHistory({ onNavigate, onExit }: RiderNavigationProps) {
   return (
-    <MobileFrame onExit={onExit}>
-      <div className="h-full bg-background pt-11">
+    <div className="h-screen bg-background pt-11">
         {/* Header */}
         <div className="px-4 py-4 border-b border-border">
           <div className="flex items-center gap-3">
@@ -155,6 +153,5 @@ export function RiderTripHistory({ onNavigate, onExit }: RiderNavigationProps) {
           </div>
         </div>
       </div>
-    </MobileFrame>
   );
 }

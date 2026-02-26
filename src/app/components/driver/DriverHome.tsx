@@ -1,5 +1,4 @@
 import React from 'react';
-import { MobileFrame } from '../common/MobileFrame';
 import { DriverNavigationProps } from './DriverApp';
 import { Menu, DollarSign, Clock, TrendingUp, Navigation } from 'lucide-react';
 import { Card } from '../ui/card';
@@ -20,14 +19,13 @@ export function DriverHome({ onNavigate, onExit, isOnline }: DriverHomeProps) {
   };
 
   return (
-    <MobileFrame onExit={onExit}>
-      <div className="h-full relative bg-background pt-11">
-        {/* Map area */}
-        <div className="absolute inset-0 top-11 bg-gradient-to-br from-primary/5 to-accent/5">
-          {isOnline && (
-            <div className="relative w-full h-full">
-              {/* Current location */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+    <div className="h-screen bg-background pt-11">
+      {/* Map area */}
+      <div className="absolute inset-0 top-11 bg-gradient-to-br from-primary/5 to-accent/5">
+        {isOnline && (
+          <div className="relative w-full h-full">
+            {/* Current location */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 <motion.div
                   animate={{ scale: [1, 1.1, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
@@ -160,6 +158,5 @@ export function DriverHome({ onNavigate, onExit, isOnline }: DriverHomeProps) {
           </Card>
         </div>
       </div>
-    </MobileFrame>
   );
 }

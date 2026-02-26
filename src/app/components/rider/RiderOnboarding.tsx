@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { MobileFrame } from '../common/MobileFrame';
 import { RiderNavigationProps } from './RiderApp';
 import { ChevronRight, MapPin, Smartphone, Banknote } from 'lucide-react';
 import { Button } from '../ui/button';
@@ -49,8 +48,7 @@ export function RiderOnboarding({ onNavigate, onExit }: RiderNavigationProps) {
   };
 
   return (
-    <MobileFrame onExit={onExit}>
-      <div className="h-full flex flex-col bg-background pt-11">
+    <div className="h-screen flex flex-col bg-background pt-11">
         {/* Skip button */}
         <div className="absolute top-14 right-4 z-10">
           <button onClick={handleSkip} className="text-sm text-muted-foreground hover:text-foreground">
@@ -110,6 +108,5 @@ export function RiderOnboarding({ onNavigate, onExit }: RiderNavigationProps) {
           </Button>
         </div>
       </div>
-    </MobileFrame>
   );
 }

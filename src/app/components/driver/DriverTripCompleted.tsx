@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { MobileFrame } from '../common/MobileFrame';
 import { DriverNavigationProps } from './DriverApp';
 import { CheckCircle, Star, DollarSign } from 'lucide-react';
 import { Card } from '../ui/card';
@@ -16,8 +15,7 @@ export function DriverTripCompleted({ onNavigate, onExit }: DriverNavigationProp
   };
 
   return (
-    <MobileFrame onExit={onExit}>
-      <div className="h-full flex flex-col bg-background pt-11 overflow-auto">
+    <div className="h-screen flex flex-col bg-background pt-11 overflow-auto">
         {/* Header */}
         <div className="text-center py-8 px-6">
           <motion.div
@@ -181,6 +179,5 @@ export function DriverTripCompleted({ onNavigate, onExit }: DriverNavigationProp
           </Button>
         </motion.div>
       </div>
-    </MobileFrame>
   );
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { MobileFrame } from '../common/MobileFrame';
 import { RiderNavigationProps } from './RiderApp';
 import { ArrowLeft, User, MapPin, CreditCard, Bell, Globe, HelpCircle, LogOut, ChevronRight, Home, Briefcase } from 'lucide-react';
 import { Card } from '../ui/card';
@@ -7,8 +6,7 @@ import { Switch } from '../ui/switch';
 
 export function RiderProfile({ onNavigate, onExit }: RiderNavigationProps) {
   return (
-    <MobileFrame onExit={onExit}>
-      <div className="h-full bg-background pt-11 overflow-auto">
+    <div className="h-screen bg-background pt-11 overflow-auto">
         {/* Header */}
         <div className="px-4 py-4 border-b border-border">
           <div className="flex items-center gap-3">
@@ -160,6 +158,5 @@ export function RiderProfile({ onNavigate, onExit }: RiderNavigationProps) {
           </button>
         </div>
       </div>
-    </MobileFrame>
   );
 }
