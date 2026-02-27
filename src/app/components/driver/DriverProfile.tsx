@@ -76,7 +76,7 @@ export function DriverProfile({ onNavigate, onExit }: DriverNavigationProps) {
               </div>
               <div>
                 <p className="text-muted-foreground mb-1">Ride Type</p>
-                <p className="text-foreground">Haal Comfort</p>
+                <p className="text-foreground">Halla Comfort</p>
               </div>
             </div>
           </Card>

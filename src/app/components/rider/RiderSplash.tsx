@@ -42,7 +42,7 @@ export function RiderSplash({ onNavigate, onExit }: RiderNavigationProps) {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="text-5xl text-white text-center mb-3"
           >
-            HAAL CABS
+            HALLA TAXI
           </motion.h1>
 
           <motion.p

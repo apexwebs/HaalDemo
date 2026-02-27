@@ -49,7 +49,7 @@ export function AdminSettings({ onNavigate, onExit }: AdminNavigationProps) {
 
             <div className="space-y-4">
               <div>
-                <p className="text-sm mb-3 text-foreground">Haal Economy</p>
+                <p className="text-sm mb-3 text-foreground">Halla Economy</p>
                 <div className="grid grid-cols-3 gap-2">
                   <div>
                     <label className="block text-xs mb-1">Base</label>
@@ -67,7 +67,7 @@ export function AdminSettings({ onNavigate, onExit }: AdminNavigationProps) {
               </div>
 
               <div>
-                <p className="text-sm mb-3 text-foreground">Haal Comfort</p>
+                <p className="text-sm mb-3 text-foreground">Halla Comfort</p>
                 <div className="grid grid-cols-3 gap-2">
                   <div>
                     <label className="block text-xs mb-1">Base</label>
@@ -85,7 +85,7 @@ export function AdminSettings({ onNavigate, onExit }: AdminNavigationProps) {
               </div>
 
               <div>
-                <p className="text-sm mb-3 text-foreground">Haal XL</p>
+                <p className="text-sm mb-3 text-foreground">Halla XL</p>
                 <div className="grid grid-cols-3 gap-2">
                   <div>
                     <label className="block text-xs mb-1">Base</label>
@@ -127,7 +127,7 @@ export function AdminSettings({ onNavigate, onExit }: AdminNavigationProps) {
               </div>
               <div>
                 <label className="block text-sm mb-2">Support Email</label>
-                <Input type="email" defaultValue="support@haalcabs.ke" className="h-10" />
+                <Input type="email" defaultValue="support@hallatTaxi.ke" className="h-10" />
               </div>
               <Button className="w-full bg-primary hover:bg-primary/90 text-white">
                 Save Configuration

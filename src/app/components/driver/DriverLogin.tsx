@@ -36,7 +36,7 @@ export function DriverLogin({ onNavigate, onExit }: DriverNavigationProps) {
             <h1 className="text-3xl text-foreground mb-2">Driver Portal</h1>
             <p className="text-muted-foreground">Lango la Dereva</p>
             <div className="mt-4 inline-block bg-white rounded-full px-6 py-2 shadow-md">
-              <p className="text-sm text-primary">HAAL CABS</p>
+              <p className="text-sm text-primary">HALLA TAXI</p>
             </div>
           </div>
 
@@ -106,7 +106,7 @@ export function DriverLogin({ onNavigate, onExit }: DriverNavigationProps) {
         {/* Footer */}
         <div className="px-6 pb-8 text-center">
           <p className="text-xs text-muted-foreground">
-            Need help? Contact Haal Cabs Support
+            Need help? Contact Halla Taxi Support
           </p>
           <p className="text-xs text-muted-foreground mt-1">
             +254 700 123 456

@@ -72,7 +72,7 @@ export function RiderDriverMatched({ onNavigate, onExit }: RiderNavigationProps)
                     <span className="text-sm text-foreground">4.9</span>
                   </div>
                 </div>
-                <p className="text-sm text-muted-foreground mb-2">Haal Comfort Driver</p>
+                <p className="text-sm text-muted-foreground mb-2">Halla Comfort Driver</p>
                 <div className="flex items-center gap-4 text-sm">
                   <div>
                     <p className="text-xs text-muted-foreground">Vehicle</p>

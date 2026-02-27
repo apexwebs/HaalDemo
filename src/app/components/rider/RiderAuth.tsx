@@ -40,8 +40,8 @@ export function RiderAuth({ onNavigate, onExit }: RiderNavigationProps) {
             <div className="inline-flex items-center justify-center w-20 h-20 bg-primary rounded-full mb-4">
               <Phone className="w-10 h-10 text-white" />
             </div>
-            <h1 className="text-3xl text-foreground mb-2">Welcome to Haal Cabs</h1>
-            <p className="text-muted-foreground">Karibu Haal Cabs</p>
+            <h1 className="text-3xl text-foreground mb-2">Welcome to Halla Taxi</h1>
+            <p className="text-muted-foreground">Karibu Halla Taxi</p>
           </div>
 
           {step === 'phone' && (

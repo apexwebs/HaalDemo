@@ -7,7 +7,7 @@ import { Card } from '../ui/card';
 const rideTypes = [
   {
     id: 'economy',
-    name: 'Haal Economy',
+    name: 'Halla Economy',
     nameSwahili: 'Kawaida',
     description: 'Affordable rides',
     descriptionSwahili: 'Safari za bei nafuu',
@@ -19,7 +19,7 @@ const rideTypes = [
   },
   {
     id: 'comfort',
-    name: 'Haal Comfort',
+    name: 'Halla Comfort',
     nameSwahili: 'Starehe',
     description: 'Premium vehicles',
     descriptionSwahili: 'Magari bora',
@@ -32,7 +32,7 @@ const rideTypes = [
   },
   {
     id: 'xl',
-    name: 'Haal XL',
+    name: 'Halla XL',
     nameSwahili: 'Kubwa',
     description: 'Extra space',
     descriptionSwahili: 'Nafasi zaidi',

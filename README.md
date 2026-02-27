@@ -1,4 +1,4 @@
-# Haal Cabs
+# Halla Taxi
 
 Ride-hailing platform for Mombasa, Kenya — featuring rider app, driver app, and admin dashboard.
 

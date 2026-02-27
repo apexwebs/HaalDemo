@@ -45,7 +45,7 @@ export function AdminDashboardHome({ onNavigate, onExit }: AdminNavigationProps)
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl mb-2 text-foreground">Dashboard Overview</h1>
-          <p className="text-muted-foreground">Real-time platform analytics for Haal Cabs</p>
+          <p className="text-muted-foreground">Real-time platform analytics for Halla Taxi</p>
         </div>
 
         {/* Stats cards */}

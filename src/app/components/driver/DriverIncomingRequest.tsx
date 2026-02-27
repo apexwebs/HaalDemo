@@ -66,7 +66,7 @@ export function DriverIncomingRequest({ onNavigate, onExit }: DriverNavigationPr
                 <p className="text-sm text-muted-foreground">4.8 ★ Rating</p>
               </div>
               <div className="text-right">
-                <p className="text-sm text-muted-foreground">Haal Comfort</p>
+                <p className="text-sm text-muted-foreground">Halla Comfort</p>
               </div>
             </div>
 

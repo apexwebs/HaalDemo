@@ -77,7 +77,7 @@ export function RiderFindingDriver({ onNavigate, onExit }: RiderNavigationProps)
             <div className="h-px bg-border"></div>
             <div className="flex items-center justify-between">
               <span className="text-sm text-muted-foreground">Ride Type</span>
-              <span className="text-sm text-primary">Haal Comfort</span>
+              <span className="text-sm text-primary">Halla Comfort</span>
             </div>
             <div className="flex items-center justify-between">
               <span className="text-sm text-muted-foreground">Estimated Fare</span>

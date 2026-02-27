@@ -71,7 +71,7 @@ export function DriverNavigating({ onNavigate, onExit }: DriverNavigationProps) 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-foreground">Rider Details</h3>
-                <span className="text-sm text-muted-foreground">Haal Comfort</span>
+                <span className="text-sm text-muted-foreground">Halla Comfort</span>
               </div>
 
               <div className="flex items-center gap-3 p-3 rounded-xl bg-muted/50 mb-4">

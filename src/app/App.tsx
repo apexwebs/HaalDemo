@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { RiderApp } from './components/rider/RiderApp';
 import { DriverApp } from './components/driver/DriverApp';
 import { AdminDashboard } from './components/admin/AdminDashboard';
-import { Car, Users, LayoutDashboard, ArrowLeft } from 'lucide-react';
+import { Car, Users, LayoutDashboard, ArrowLeft, Presentation } from 'lucide-react';
 
 type AppView = 'selector' | 'rider' | 'driver' | 'admin';
 
@@ -58,7 +58,7 @@ export default function App() {
           <div className="inline-flex items-center justify-center w-20 h-20 bg-primary rounded-full mb-6">
             <Car className="w-10 h-10 text-white" />
           </div>
-          <h1 className="text-5xl mb-3 text-foreground">HAAL CABS</h1>
+          <h1 className="text-5xl text-white text-center mb-3">HALLA TAXI</h1>
           <p className="text-xl text-muted-foreground">Your Ride, Your Way / Safari Yako, Njia Yako</p>
         </div>
 
@@ -103,6 +103,16 @@ export default function App() {
               <p className="text-sm text-muted-foreground mb-4">Web Desktop</p>
               <p className="text-xs text-muted-foreground">Manage platform, view analytics</p>
             </div>
+          </button>
+        </div>
+
+        <div className="mt-8 flex justify-center">
+          <button
+            onClick={() => window.open('src/app/components/investorDeck.html', '_blank')}
+            className="group flex items-center gap-3 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-8 py-4 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+          >
+            <Presentation className="w-6 h-6" />
+            <span className="text-lg font-semibold">Investor Deck</span>
           </button>
         </div>
 

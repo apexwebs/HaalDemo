@@ -32,7 +32,7 @@ export function DesktopFrame({ children, onExit, currentScreen, onNavigate, show
                 <Car className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h2 className="text-lg text-foreground">HAAL CABS</h2>
+                <h2 className="text-lg text-foreground">HALLA TAXI</h2>
                 <p className="text-xs text-muted-foreground">Admin Portal</p>
               </div>
             </div>
@@ -68,7 +68,7 @@ export function DesktopFrame({ children, onExit, currentScreen, onNavigate, show
               </div>
               <div className="flex-1">
                 <p className="text-sm text-foreground">Admin User</p>
-                <p className="text-xs text-muted-foreground">admin@haalcabs.ke</p>
+                <p className="text-xs text-muted-foreground">admin@hallataxi.ke</p>
               </div>
               <button className="text-muted-foreground hover:text-foreground">
                 <LogOut className="w-4 h-4" />
