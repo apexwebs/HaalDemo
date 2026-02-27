@@ -108,7 +108,7 @@ export default function App() {
 
         <div className="mt-8 flex justify-center">
           <button
-            onClick={() => window.open('src/app/components/investorDeck.html', '_blank')}
+            onClick={() => window.open('investorDeck.html', '_blank')}
             className="group flex items-center gap-3 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-8 py-4 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
           >
             <Presentation className="w-6 h-6" />
