@@ -58,7 +58,7 @@ export default function App() {
           <div className="inline-flex items-center justify-center w-20 h-20 bg-primary rounded-full mb-6">
             <Car className="w-10 h-10 text-white" />
           </div>
-          <h1 className="text-5xl text-white text-center mb-3">HALLA TAXI</h1>
+          <h1 className="text-5xl text-primary text-center mb-3">HALLA TAXI</h1>
           <p className="text-xl text-muted-foreground">Your Ride, Your Way / Safari Yako, Njia Yako</p>
         </div>
 
